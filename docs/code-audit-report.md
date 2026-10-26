@@ -23,7 +23,7 @@ No blocker to publishing the directory. Several linked designs still require ele
 - Parsed the sitemap XML and checked that its root URL and the robots sitemap directive agree with the canonical URL.
 - Inspected the page in the collaborative browser at 1280, 1440 and 390 CSS pixels. Full-page desktop/mobile screenshots show the complete directory, with no horizontal overflow. The skip link becomes visible on keyboard focus, its outline is present, and section navigation reaches the intended anchor.
 - Computed WCAG text contrast for every foreground/link/muted token against its light/dark background: the lowest ratio is **6.33:1**. No console errors were observed.
-- An independent finish reviewer inspected the source and all three screenshot sizes. Its sole required fix was the stale README description, which is corrected. No layout recapture was requested.
+- An independent finish reviewer inspected the source and all three screenshot sizes. Its sole required fix was the stale README description; its follow-up verdict scored that fix resolved and returned **ship**. No layout recapture was requested.
 - The design detector's ten row-padding warnings were checked against the browser: actual top/bottom padding is 24 px. They arise from the detector not accounting for `padding-block`, so no spacing change was needed.
 - Reviewed the diff and ran Git whitespace and local-link checks. Deployment is verified after merge against the public URL and Pages build result.
 

@@ -24,8 +24,8 @@
 
 Michael's follow-up authorises source corrections and merging the reviewed changes into the existing default branches.
 
-- [ ] Audit every repository's source and existing PR with disjoint parallel ownership.
-- [ ] Correct verified defects and record unresolved electrical/provenance constraints.
+- [x] Audit every repository's source and existing PR with disjoint parallel ownership.
+- [x] Correct verified defects and record unresolved electrical/provenance constraints.
 - [x] Replace the deployed website placeholder with an accessible static project directory.
 - [x] Validate the directory in the browser and check all repository links and metadata.
 - [ ] Review final source/export changes, update all PR descriptions and merge verified heads without bypassing checks.
