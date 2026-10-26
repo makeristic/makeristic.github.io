@@ -19,3 +19,14 @@
 - [x] Verify catalogue claims, links and all agents' evidence and diffs.
 - [x] Record the cross-repository hygiene findings and validation.
 - [x] Commit, push, open and register all PRs; confirm clean and synced branches.
+
+## Source audit and correction
+
+Michael's follow-up authorises source corrections and merging the reviewed changes into the existing default branches.
+
+- [ ] Audit every repository's source and existing PR with disjoint parallel ownership.
+- [ ] Correct verified defects and record unresolved electrical/provenance constraints.
+- [x] Replace the deployed website placeholder with an accessible static project directory.
+- [x] Validate the directory in the browser and check all repository links and metadata.
+- [ ] Review final source/export changes, update all PR descriptions and merge verified heads without bypassing checks.
+- [ ] Verify default-branch contents, published website, repository state and final handoff.

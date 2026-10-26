@@ -1,1 +1,95 @@
-Hello World
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Makeristic — electronics projects by Michael Cutler</title>
+    <meta name="description" content="Explore Makeristic's KiCad electronics projects: USB-C and STM32 boards, Halloween LED badges, Feather templates and component libraries.">
+    <link rel="canonical" href="https://makeristic.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Makeristic — electronics projects by Michael Cutler">
+    <meta property="og:description" content="KiCad boards, Halloween LED badges, Feather templates and component libraries, started in 2020.">
+    <meta property="og:url" content="https://makeristic.github.io/">
+    <meta name="theme-color" content="#f8f8f2">
+    <style>
+      :root { color-scheme: light dark; --paper: #f8f8f2; --ink: #203c32; --muted: #486154; --line: #becbc1; --link: #185c3b; }
+      * { box-sizing: border-box; }
+      html { scroll-padding-top: 1rem; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font: 1.0625rem/1.65 system-ui, sans-serif; }
+      ::selection { color: var(--paper); background: var(--ink); }
+      a { color: var(--link); text-underline-offset: .2em; text-decoration-thickness: .08em; }
+      a:hover { text-decoration-thickness: .16em; }
+      a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+      header, main, footer { max-width: 72rem; margin-inline: auto; padding-inline: clamp(1.25rem, 5vw, 4rem); }
+      header { padding-block: 1.5rem; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 2rem; }
+      .brand { font-weight: 750; font-size: 1.25rem; text-decoration: none; }
+      nav { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+      main { padding-top: clamp(2rem, 6vw, 4rem); }
+      h1, h2, h3 { line-height: 1.2; text-wrap: balance; }
+      h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 650; letter-spacing: -.025em; max-width: 19ch; margin: 0 0 1.5rem; }
+      h2 { margin: 0 0 1.5rem; font-size: 1.65rem; }
+      h3 { margin: 0 0 .5rem; font-size: 1.125rem; }
+      p { max-width: 70ch; margin: 0 0 1.25rem; }
+      .intro { margin-bottom: 3.5rem; }
+      section { margin-bottom: 3.5rem; }
+      .projects { margin: 0; padding: 0; list-style: none; }
+      .projects li { display: grid; grid-template-columns: minmax(12rem, 1fr) minmax(0, 2fr); gap: .75rem 2.5rem; padding-block: 1.5rem; border-top: 1px solid var(--line); }
+      .projects p { margin: 0; }
+      .status { color: var(--muted); display: block; margin-top: .5rem; font-size: .9375rem; }
+      footer { border-top: 1px solid var(--line); padding-block: 1.5rem 3rem; color: var(--muted); }
+      .skip { position: absolute; top: -8rem; left: 1rem; padding: .75rem; background: var(--paper); }
+      .skip:focus { top: 1rem; }
+      @media (max-width: 40rem) { .projects li { grid-template-columns: 1fr; } nav { font-size: .9375rem; } }
+      @media (prefers-color-scheme: dark) { :root { --paper: #18251e; --ink: #e9eee4; --muted: #bbc9bc; --line: #475b4b; --link: #a3d7ac; } }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#projects">Skip to projects</a>
+    <header>
+      <a class="brand" href="/" aria-label="Makeristic home">Makeristic</a>
+      <nav aria-label="Main navigation">
+        <a href="#boards">Boards</a>
+        <a href="#badges">Badges</a>
+        <a href="#libraries">Templates &amp; parts</a>
+        <a href="https://github.com/makeristic">GitHub</a>
+      </nav>
+    </header>
+    <main id="projects">
+      <div class="intro">
+        <h1>Boards, badges &amp; building blocks.</h1>
+        <p>Hobby electronics by Michael Cutler, started in 2020. Explore the KiCad sources, schematics and build notes behind Makeristic's boards and tools.</p>
+        <p>Some projects were manufactured; others remain unfinished designs. Each repository documents its available files, known issues and reuse terms.</p>
+      </div>
+      <section id="boards" aria-labelledby="boards-heading">
+        <h2 id="boards-heading">Boards &amp; circuits</h2>
+        <ul class="projects">
+          <li><h3><a href="https://github.com/makeristic/STUSB4500_Breakout">STUSB4500 breakout</a></h3><p>USB-C Power Delivery sink with STEMMA QT, screw-terminal output and RGB indication.<span class="status">Work in progress · KiCad source and historical fabrication files</span></p></li>
+          <li><h3><a href="https://github.com/makeristic/Feather_STM32WB55">STM32WB55 Feather</a></h3><p>A Bluetooth microcontroller board in the Feather form factor, with USB-C and STEMMA QT.<span class="status">Work in progress · Four-layer PCB, BOM and CubeMX configuration</span></p></li>
+          <li><h3><a href="https://github.com/makeristic/stemma-machxo32">STEMMA MachXO2</a></h3><p>A Lattice FPGA breakout with I²C connectors and DebugEdge programming, forked from Chickadee Tech.<span class="status">Historical design · Check package selection and upstream licence terms</span></p></li>
+          <li><h3><a href="https://github.com/makeristic/CurrentSensor">CurrentSensor</a></h3><p>An STM32F042 USB-C current measurement concept with a MAX4239 analogue front end.<span class="status">Unfinished schematic · No PCB layout or firmware</span></p></li>
+        </ul>
+      </section>
+      <section id="badges" aria-labelledby="badges-heading">
+        <h2 id="badges-heading">HallowBadges</h2>
+        <p>ATtiny13A Halloween badges with flashing LEDs, CR2032 battery power and an optional Simple Add-ons connector. The original notes describe manufactured boards.</p>
+        <ul class="projects">
+          <li><h3><a href="https://github.com/makeristic/HallowBadges-Bat">Bat</a></h3><p>A bat-shaped PCB badge with source files, a BOM and fabrication exports.</p></li>
+          <li><h3><a href="https://github.com/makeristic/HallowBadges-Ghost">Ghost</a></h3><p>A ghost-shaped badge, including assembled-board photos and a demonstration video.</p></li>
+          <li><h3><a href="https://github.com/makeristic/HallowBadges-Pumpkin">Pumpkin</a></h3><p>A pumpkin-shaped badge with source files, a BOM and fabrication exports.</p></li>
+        </ul>
+      </section>
+      <section id="libraries" aria-labelledby="libraries-heading">
+        <h2 id="libraries-heading">Templates &amp; parts</h2>
+        <ul class="projects">
+          <li><h3><a href="https://github.com/makeristic/Adafruit_Feather">Feather template</a></h3><p>A KiCad starting layout with Micro-USB, battery connector, headers and mounting holes. Derived from arturo182's template.</p></li>
+          <li><h3><a href="https://github.com/makeristic/Adafruit_Feather_USB-C">USB-C Feather template</a></h3><p>A USB-C variant of the Feather template. Add the controller, USB-C termination and application circuitry before fabrication.</p></li>
+          <li><h3><a href="https://github.com/makeristic/Makeristic-KiCad-Library">KiCad component library</a></h3><p>Collected and customised symbols, footprints and 3D models for Makeristic projects. Individual assets have different provenance and reuse terms.</p></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Source, the full catalogue and audit notes: <a href="https://github.com/makeristic/makeristic.github.io">makeristic.github.io</a>.</p>
+      <p>Read each project's licence before reuse. Vendor documents and imported CAD assets retain their own terms.</p>
+    </footer>
+  </body>
+</html>

@@ -4,7 +4,7 @@ Michael Cutler's collection of electronics projects, started in 2020: microcontr
 
 This catalogue links all 11 public repositories in the [Makeristic organisation](https://github.com/orgs/makeristic/repositories). Each project's own README describes its design status, available manufacturing files and licence. The collection includes unfinished designs and upstream-derived work; a repository's presence here does not imply a tested or production-ready board.
 
-The [repository hygiene review](docs/repository-hygiene.md) records the October 2026 documentation updates, known reproducibility gaps and proposed next steps.
+The [repository hygiene review](docs/repository-hygiene.md) records the October 2026 source corrections, known reproducibility gaps and proposed next steps. Each hardware repository also has a source audit report; read it before using historical manufacturing exports.
 
 ## Boards and circuits
 
@@ -15,7 +15,7 @@ The [repository hygiene review](docs/repository-hygiene.md) records the October 
 
 ## HallowBadges
 
-Three ATtiny13A Halloween LED badge designs. Their repositories include KiCad sources, BOMs, schematic PDFs, fabrication files, board images and a firmware example in the README. The original project notes describe manufactured boards.
+Three ATtiny13A Halloween LED badge designs. Their repositories include KiCad sources, BOMs, schematic PDFs, historical fabrication files, board images and a downloadable Arduino sketch with a pinned compilation configuration. The original project notes describe manufactured boards.
 
 - **[Bat](https://github.com/makeristic/HallowBadges-Bat)** — bat-shaped badge.
 - **[Ghost](https://github.com/makeristic/HallowBadges-Ghost)** — ghost-shaped badge, including an assembled-board photo.
@@ -29,7 +29,7 @@ Three ATtiny13A Halloween LED badge designs. Their repositories include KiCad so
 
 ## This repository
 
-**[makeristic.github.io](https://github.com/makeristic/makeristic.github.io)** holds this catalogue and the original minimal [website entry point](index.html). GitHub Pages is configured to publish `main` from the repository root. The website currently contains only “Hello World”; this README is the project directory.
+**[makeristic.github.io](https://github.com/makeristic/makeristic.github.io)** holds this catalogue and the [public project directory](https://makeristic.github.io/). GitHub Pages publishes the static [index.html](index.html) from `main` at the repository root. It links every project, works without JavaScript or a build system, and includes search/social metadata, a sitemap and crawler guidance. The [website audit](docs/code-audit-report.md) records the source and browser checks.
 
 ```sh
 gh repo list makeristic --limit 1000
