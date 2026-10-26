@@ -5,9 +5,9 @@
 - All 11 organisation repositories are cloned under the workspace and listed in the catalogue.
 - Project summaries reflect inspected source files and distinguish unfinished and upstream-derived work.
 - The catalogue links every project and describes the different licence scopes.
-- GitHub descriptions and topics are updated across the collection without renaming repositories, creating release tags or modifying board designs.
-- Every repository change is reviewed, checked, committed, pushed and proposed through an open PR; existing licences and notices are preserved.
-- The website's minimal existing page is preserved; the README is the catalogue.
+- GitHub descriptions and topics are updated across the collection without renaming repositories or fabricating release tags. Source corrections have specific evidence and validation.
+- Every repository change is reviewed, checked, committed, pushed and shipped through the same task PR; existing licences and notices are preserved.
+- The website publishes a static project directory through the existing Pages configuration; the README is the complete catalogue.
 
 ## Checklist
 
@@ -28,5 +28,5 @@ Michael's follow-up authorises source corrections and merging the reviewed chang
 - [x] Correct verified defects and record unresolved electrical/provenance constraints.
 - [x] Replace the deployed website placeholder with an accessible static project directory.
 - [x] Validate the directory in the browser and check all repository links and metadata.
-- [ ] Review final source/export changes, update all PR descriptions and merge verified heads without bypassing checks.
-- [ ] Verify default-branch contents, published website, repository state and final handoff.
+- [x] Review final source/export changes, update all PR descriptions and merge verified heads without bypassing checks.
+- [x] Verify default-branch contents, published website, repository state and final handoff.
